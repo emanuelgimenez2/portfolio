@@ -47,8 +47,8 @@ export default function Skills() {
                   >
                     {skills}
                     <a
-                      href="https://movies-seven-theta.vercel.app/"
-                       // target="_blank"
+                      href="https://api-movies-emanuelgimenez2.vercel.app/"
+                        target="_blank"
                     >
                       Movies
                     </a>
