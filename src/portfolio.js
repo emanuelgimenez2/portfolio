@@ -25,7 +25,6 @@ const socialMediaLinks = {
   gmail: "emanuelgimenez2@gmail.com",
   whatsapp: "https://walink.co/664eed",
   instagram: "https://www.instagram.com/manurauns/",
- 
 };
 
 // Your Skills Section
@@ -33,12 +32,7 @@ const socialMediaLinks = {
 const skillsSection = {
   title: "What i do",
   subTitle: "FULL STACK DEVELOPER",
-  skills: [
-    emoji("⚡ "),
-    
-  ],
-
-  
+  skills: [emoji("⚡ ")],
 
   softwareSkills: [
     {
@@ -86,11 +80,11 @@ const educationInfo = {
   viewEducation: true, // Set it to true to see education section
   schools: [
     {
-      schoolName: "Facultad de Ciencia y Tecnología, Sede Concepción del Uruguay",
+      schoolName:
+        "Facultad de Ciencia y Tecnología, Sede Concepción del Uruguay",
       logo: require("./assets/images/logo_fcyt.png"),
       subHeader: "Licenciatura en Sistemas de Información",
       duration: "April 2008",
-      
     },
     {
       schoolName: "freecodecamp.org",
@@ -99,10 +93,10 @@ const educationInfo = {
       duration: "June 2020 - October 2020",
       ////descBullets: [
       //'hTML5 | CSS3 | JavaScript | Git | Basic Testing`,
-        //`Data Structures, algorithms, Big O, Functional VS OOP.`,
-        //`AJAX | Webpack | ReactJS | Redux | React-Redux`,
-        //`NodeJs | Web servers (Express) | TypeScript`,
-        //`SQL | Postgres | MySQL | authentication`,
+      //`Data Structures, algorithms, Big O, Functional VS OOP.`,
+      //`AJAX | Webpack | ReactJS | Redux | React-Redux`,
+      //`NodeJs | Web servers (Express) | TypeScript`,
+      //`SQL | Postgres | MySQL | authentication`,
       //],
     },
     {
@@ -162,31 +156,31 @@ const workExperiences = {
       company: "Prefectura Naval Argentina",
       companylogo: require("./assets/images/prefectura_logo.jpg"),
       date: "2009 – Present",
-      desc: `responsible personnel in shipping, administration and IT support.`,
+      desc: `Responsible personnel in shipping, administration and IT support.`,
       descBullets: [
         "Personnel team",
         "Management in general",
         "Support to IT services",
-        "solve all kinds of related errors",
-        "Technical support, emergency"
-      ]
-  },
+        "Solve all kinds of related errors",
+        "Technical support, emergency",
+      ],
+    },
 
-  {
-    role: "Help Desk",
-    company: "FreeLancer",
-    companylogo: require("./assets/images/helpdesk.png"),
-    date: "2010 – Present",
-    desc: `Solve individuals and companies problems`,
-    descBullets: [
-      "MS Windows, MS Office",
-      "Networking",
-      "Printers",
-      "Hardware problems",
-      "Software problems"
-    ]
-  }
-],
+    {
+      role: "Help Desk",
+      company: "FreeLancer",
+      companylogo: require("./assets/images/helpdesk.png"),
+      date: "2010 – Present",
+      desc: `Solve individuals and companies problems`,
+      descBullets: [
+        "MS Windows, MS Office",
+        "Networking",
+        "Printers",
+        "Hardware problems",
+        "Software problems",
+      ],
+    },
+  ],
 };
 
 /* Your Open Source Section to View Your Github Pinned Projects
@@ -201,47 +195,13 @@ const openSource = {
 const bigProjects = {
   title: "Big Projects",
   subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
-  projects: [
-   
-  ],
+  projects: [],
 };
 
 // Your Achievement Section Include Your Certification Talks and More
 const achievementSection = {
   title: emoji("Achievements And Certifications 🏆 "),
-  subtitle:
-    "",
-
-};
-   
-      
-    
-   
-
- 
-
-
-// Blogs Section
-const blogSection = {
-  title: "Blogs",
-  subtitle:
-    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
-
-  blogs: [
-    {
-      url:
-        "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
-      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
-      description:
-        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?",
-    },
-    {
-      url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
-      title: "Why REACT is The Best?",
-      description:
-        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies.",
-    },
-  ],
+  subtitle: "",
 };
 
 // Talks Sections
@@ -251,20 +211,10 @@ const talkSection = {
     "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
   ),
 
-  talks: [
-    
-  ],
+  talks: [],
 };
 
-// Podcast Section
-const podcastSection = {
-  title: emoji("Podcast 🎙️"),
-  subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
-  // Please Provide with Your Podcast embeded Link
-  podcast: [
-    "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo",
-  ],
-};
+
 
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
@@ -289,9 +239,8 @@ export {
   openSource,
   bigProjects,
   achievementSection,
-  blogSection,
   talkSection,
-  podcastSection,
+ 
   contactInfo,
   twitterDetails,
 };
