@@ -91,38 +91,47 @@ const educationInfo = {
       logo: require("./assets/images/logo_freecodecamp.jfif"),
       subHeader: "Responsive Web Design",
       duration: "June 2020 - October 2020",
-      ////descBullets: [
-      //'hTML5 | CSS3 | JavaScript | Git | Basic Testing`,
-      //`Data Structures, algorithms, Big O, Functional VS OOP.`,
-      //`AJAX | Webpack | ReactJS | Redux | React-Redux`,
-      //`NodeJs | Web servers (Express) | TypeScript`,
-      //`SQL | Postgres | MySQL | authentication`,
-      //],
+      descBullets: [
+     " hTML5 | CSS3 | JavaScript ",
+     " Data Structures | algoritmos",
+      
+      ],
     },
     {
       schoolName: "Google Actívate",
       logo: require("./assets/images/google_activate.jpg"),
       subHeader: "Curso de Introducción al Desarrollo Web: HTML y CSS",
       duration: "October 2021",
+      descBullets: [
+
+        "Historia | Funcionamiento | Escritura ",
+        "Publicación | Estructuración | Presentacion ",
+        "Elementos | Maquetación | Exito",
+         
+         ],
     },
     {
       schoolName: "Platzi",
       logo: require("./assets/images/platzy-logo.jpg"),
       subHeader: "Escuela de Desarrollo Web",
       duration: "October 2021",
+      descBullets: [
+        "CodeSteam | Git y Github | JavaScript | Estructura de Datos",        
+        "ECMAScript 6+ | Actualmente ",
+        
+        ], 
     },
     {
       schoolName: "soyHenry",
       logo: require("./assets/images/soyHenry.png"),
       subHeader: "Full stack Developer",
       duration: "actualmente en cursado",
-      /* descBullets: [
-      'hTML5 | CSS3 | JavaScript | Git | Basic Testing`,
-        `Data Structures, algorithms, Big O, Functional VS OOP.`,
-        `AJAX | Webpack | ReactJS | Redux | React-Redux`,
-        `NodeJs | Web servers (Express) | TypeScript`,
-        `SQL | Postgres | MySQL | authentication`,
-      ], */
+       descBullets: [
+      "hTML5 | CSS3 | JavaScript | Git | Basic Testing",        
+       " AJAX | Webpack | ReactJS | Redux | React-Redux",
+       " NodeJs | Web servers (Express) | TypeScript",
+        "SQL | Postgres | MySQL | authentication",
+      ], 
     },
   ],
 };
