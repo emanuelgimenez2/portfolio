@@ -74,7 +74,28 @@ const skillsSection = {
   ],
 };
 
-// Your education background
+/* // Your education background
+const projects = [
+  {
+    id: 1,
+    title: "Movies",
+    description:
+      "Aplication that allows you to search for movies and shows, and save them in your favorites.",
+    image: ".../../assets/images/movies-page.jpg",
+    link: "https://api-movies-ten.vercel.app/",
+    repo: "https://github.com/emanuelgimenez2/api-movies"
+  },
+  {
+    id: 2,
+    title: "Weather",
+    description:
+      "Aplication that allows you to search for weather in any city.",
+    image: "https://i.ibb.co/qxqQzZx/movies-page.jpg",
+    link: "https://api-weather-ten.vercel.app/",
+    repo: ""
+  },
+]; */
+
 
 const educationInfo = {
   viewEducation: true, // Set it to true to see education section
@@ -192,19 +213,27 @@ const workExperiences = {
   ],
 };
 
-/* Your Open Source Section to View Your Github Pinned Projects
-To know how to get github key look at readme.md */
-const openSource = {
-  githubConvertedToken: process.env.REACT_APP_GITHUB_TOKEN,
+//  Your Open Source Section to View Your Github Pinned Projects
+// To know how to get github key look at readme.md 
+ const openSource = {
+  githubConvertedToken:"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",
   githubUserName: "emanuelgimenez2", // Change to your github username to view your profile in Contact Section.
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to false
 };
-
+ 
 // Some Big Projects You have worked with your company
 const bigProjects = {
   title: "Big Projects",
   subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
-  projects: [],
+  projects: [
+    {
+      
+      link: "https://www.behance.net/gallery/58937147/Freiheit",
+      github: ""
+    },
+
+
+  ],
 };
 
 // Your Achievement Section Include Your Certification Talks and More
@@ -217,7 +246,7 @@ const achievementSection = {
 const talkSection = {
   title: "TALKS",
   subtitle: emoji(
-    "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
+    "I LOVE TO SHARE MY LIMITED KNOWLEDGE  😅"
   ),
 
   talks: [],
@@ -249,6 +278,7 @@ export {
   bigProjects,
   achievementSection,
   talkSection,
+ /*  projects, */
  
   contactInfo,
   twitterDetails,

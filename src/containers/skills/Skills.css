@@ -4,6 +4,7 @@
 
 .skills-text-div {
   margin-left: 50px;
+
 }
 
 .skills-main-div > * {
@@ -23,6 +24,7 @@
 .subTitle {
   color: #868e96;
 }
+
 
 /* Media Query */
 @media (max-width: 1380px) {

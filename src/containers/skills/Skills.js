@@ -12,10 +12,10 @@ export default function Skills() {
       <div className="skills-main-div">
         <Fade left duration={1000}>
           <div className="skills-image-div">
-            {/* <img
+            <img
               alt=""
               src={require("../../assets/images/developerActivity.svg")}
-            ></img> */}
+            ></img>
           </div>
         </Fade>
         <Fade right duration={1000}>
@@ -46,12 +46,16 @@ export default function Skills() {
                     }
                   >
                     {skills}
-                    <a
-                      href="https://api-movies-emanuelgimenez2.vercel.app/"
+                    <div className="card">
+                    <button className="btn btn-primary">
+                          <a
+                        href="https://api-movies-emanuelgimenez2.vercel.app/"
                         target="_blank"
-                    >
-                      Movies
-                    </a>
+                                       >
+                        Movies
+                      </a>
+                    </button>
+                    </div>
                   </p>
                 );
               })}

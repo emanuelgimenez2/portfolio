@@ -18,6 +18,8 @@ import Profile from "./profile/Profile";
 import Footer from "../components/footer/Footer";
 import Top from "./topbutton/Top";
 import "./Main.css";
+import StartupProject from "./StartupProjects/StartupProject";
+import Contact from "./contact/Contact";
 
 export default class Main extends Component {
   constructor(props) {
@@ -44,18 +46,19 @@ export default class Main extends Component {
           <Header />
           <Greeting />
           <Skills />
+      <Projects /> 
+
           <StackProgress />
           <Education />
           <WorkExperience />
-      {/*     <StartupProject /> */}
+         {/*  <StartupProject /> */}
           {/* <Achievement /> */}
           {/* <Blogs /> */}
           {/* <Talks /> */}
           {/* <Twitter /> */}
           {/* <Podcast /> */}
-          <Projects />
-          <Profile />
-          {/* <Contact /> */}
+         {/*  <Profile /> */}
+          <Contact />
           <Footer />
           <Top />
         </StyleProvider>

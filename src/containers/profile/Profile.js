@@ -60,7 +60,7 @@ export default function Profile() {
   }, []);
 
   if (
-    openSource.showGithubProfile === "true" &&
+    openSource.showGithubProfile === "false" &&
     !(typeof prof === "string" || prof instanceof String)
   ) {
     return (
