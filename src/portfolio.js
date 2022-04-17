@@ -32,7 +32,7 @@ const socialMediaLinks = {
 const skillsSection = {
   title: "What i do",
   subTitle: "FULL STACK DEVELOPER",
-  skills: [emoji("⚡ ")],
+  skills: [emoji(" ")],
 
   softwareSkills: [
     {
@@ -74,27 +74,31 @@ const skillsSection = {
   ],
 };
 
-/* // Your education background
-const projects = [
+ //Your education background
+ const projects = 
+   [
   {
     id: 1,
     title: "Movies",
     description:
       "Aplication that allows you to search for movies and shows, and save them in your favorites.",
-    image: ".../../assets/images/movies-page.jpg",
+    image: require("../src/assets/images/movies-page.jpg"),
     link: "https://api-movies-ten.vercel.app/",
     repo: "https://github.com/emanuelgimenez2/api-movies"
   },
   {
     id: 2,
-    title: "Weather",
+    title: "Contador",
     description:
       "Aplication that allows you to search for weather in any city.",
-    image: "https://i.ibb.co/qxqQzZx/movies-page.jpg",
-    link: "https://api-weather-ten.vercel.app/",
-    repo: ""
-  },
-]; */
+    image: require("../src/assets/images/Contador.jpg"),
+    link: "https://status-counter.vercel.app/",
+    repo: "https://github.com/emanuelgimenez2/statusCounter"
+  }
+]
+
+
+ 
 
 
 const educationInfo = {
@@ -278,7 +282,7 @@ export {
   bigProjects,
   achievementSection,
   talkSection,
- /*  projects, */
+  projects,
  
   contactInfo,
   twitterDetails,

@@ -110,7 +110,7 @@ export default function socialMedia() {
           className="icon-button whatsapp"
           target="_blank"
         >
-          <i class="fab fa-whatsapp"></i>
+          <i className="fab fa-whatsapp"></i>
           <span></span>
         </a>
       ) : null}

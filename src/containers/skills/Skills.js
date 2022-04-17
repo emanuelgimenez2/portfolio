@@ -36,9 +36,10 @@ export default function Skills() {
             </p>
             <SoftwareSkill />
             <div>
-              {skillsSection.skills.map((skills) => {
+              {skillsSection.skills.map((skills,index) => {
                 return (
                   <p
+                    key={index}
                     className={
                       isDark
                         ? "dark-mode subTitle skills-text"
@@ -46,16 +47,6 @@ export default function Skills() {
                     }
                   >
                     {skills}
-                    <div className="card">
-                    <button className="btn btn-primary">
-                          <a
-                        href="https://api-movies-emanuelgimenez2.vercel.app/"
-                        target="_blank"
-                                       >
-                        Movies
-                      </a>
-                    </button>
-                    </div>
                   </p>
                 );
               })}
