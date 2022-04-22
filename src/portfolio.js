@@ -9,7 +9,7 @@ const greeting = {
   username: "Emanuel Gimenez",
   title: "Hi all, I'm Emanuel",
   subTitle: emoji(
-    `Full Stack Web Developer. My working principle is learning by doing.
+    `Full Stack Web Developer.
 
     \n A passionate Software Developer 🚀 having an experience of building Web applications with JavaScript / Reactjs / Nodejs and some other cool libraries and frameworks.`
   ),
@@ -30,7 +30,7 @@ const socialMediaLinks = {
 // Your Skills Section
 
 const skillsSection = {
-  title: "What i do",
+  title: "Skill",
   subTitle: "FULL STACK DEVELOPER",
   skills: [emoji(" ")],
 

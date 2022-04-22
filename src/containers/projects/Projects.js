@@ -6,7 +6,7 @@ import { projects } from "../../portfolio.js";
 export default function Projects(props) {
   return (
     <div className="main-project">
-      <h1 className="education-heading">Projectos</h1>
+      <h1 className="education-heading">Projects</h1>
       <div className="main-project-container">
 
       {projects.map((project, index) => {
