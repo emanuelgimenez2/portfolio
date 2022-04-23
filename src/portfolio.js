@@ -22,7 +22,7 @@ const greeting = {
 const socialMediaLinks = {
   github: "https://github.com/emanuelgimenez2",
   linkedin: "https://www.linkedin.com/in/emanuel-gimenez/",
-  gmail: "emanuelgimenez2@gmail.com",
+  gmail: "e.gimenez.developer@gmail.com",
   whatsapp: "https://walink.co/664eed",
   instagram: "https://www.instagram.com/manurauns/",
 };
@@ -112,13 +112,13 @@ const educationInfo = {
       duration: "April 2008",
     },
     {
-      schoolName: "freecodecamp.org",
+      schoolName: "FreeCodeCamp.org",
       logo: require("./assets/images/logo_freecodecamp.jfif"),
       subHeader: "Responsive Web Design",
       duration: "June 2020 - October 2020",
       descBullets: [
      " hTML5 | CSS3 | JavaScript ",
-     " Data Structures | algoritmos",
+     " Data Structures | Algoritmos",
       
       ],
     },
@@ -155,7 +155,7 @@ const educationInfo = {
       "hTML5 | CSS3 | JavaScript | Git | Basic Testing",        
        " AJAX | Webpack | ReactJS | Redux | React-Redux",
        " NodeJs | Web servers (Express) | TypeScript",
-        "SQL | Postgres | MySQL | authentication",
+        "SQL | Postgres | MySQL | Authentication",
       ], 
     },
   ],
@@ -186,7 +186,7 @@ const workExperiences = {
   viewExperiences: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Personal en actividad",
+      role: "Personal permanent",
       company: "Prefectura Naval Argentina",
       companylogo: require("./assets/images/prefectura_logo.jpg"),
       date: "2009 – Present",
@@ -263,7 +263,7 @@ const contactInfo = {
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
   number: "+5493442533465",
-  email_address: "emanuelgimenez2@gmail.com",
+  email_address: "e.gimenez.developer@gmail.com",
 };
 
 //Twitter Section
