@@ -94,6 +94,15 @@ const skillsSection = {
     image: require("../src/assets/images/Contador.jpg"),
     link: "https://status-counter.vercel.app/",
     repo: "https://github.com/emanuelgimenez2/statusCounter"
+  },
+  {
+    id: 3,
+    title: "Weather App",
+    description:
+      "Aplication that allows you to search for weather in any city.",
+    image: require("../src/assets/images/clima.jpg"),
+    link: "https://app-weather-emanuelgimenez2.vercel.app/",
+    repo: "https://github.com/emanuelgimenez2/App-weather"
   }
 ]
 
