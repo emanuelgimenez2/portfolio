@@ -134,13 +134,13 @@ const educationInfo = {
     {
       schoolName: "Google Actívate",
       logo: require("./assets/images/google_activate.jpg"),
-      subHeader: "Curso de Introducción al Desarrollo Web: HTML y CSS",
+      subHeader: "Introduction to Web Development Course: HTML y CSS",
       duration: "October 2021",
       descBullets: [
 
-        "Historia | Funcionamiento | Escritura ",
-        "Publicación | Estructuración | Presentacion ",
-        "Elementos | Maquetación | Exito",
+        "History | Operation | Writing ",
+        "Publication | Structuring | Presentation ",
+        "Elements | Layout | Exit",
          
          ],
     },
@@ -150,16 +150,16 @@ const educationInfo = {
       subHeader: "Escuela de Desarrollo Web",
       duration: "October 2021",
       descBullets: [
-        "CodeSteam | Git y Github | JavaScript | Estructura de Datos",        
-        "ECMAScript 6+ | Actualmente ",
+        "CodeSteam | Git y Github | JavaScript | Data Structure",        
+        "ECMAScript 6+ | APIs | ReactJS | NodeJS | MongoDB",
         
         ], 
     },
     {
       schoolName: "soyHenry",
       logo: require("./assets/images/soyHenry.png"),
-      subHeader: "Full stack Developer",
-      duration: "actualmente en cursado",
+      subHeader: "Full Stack Developer",
+      duration: "currently in course",
        descBullets: [
       "hTML5 | CSS3 | JavaScript | Git | Basic Testing",        
        " AJAX | Webpack | ReactJS | Redux | React-Redux",
@@ -272,7 +272,7 @@ const contactInfo = {
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
   number: "+5493442533465",
-  email_address: "e.gimenez.developer@gmail.com",
+  email_address: "emanuelgimenez2@gmail.com",
 };
 
 //Twitter Section
