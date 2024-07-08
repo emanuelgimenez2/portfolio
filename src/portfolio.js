@@ -14,7 +14,7 @@ const greeting = {
     \n A passionate Software Developer 🚀 having an experience of building Web applications with JavaScript / Reactjs / Nodejs and some other cool libraries and frameworks.`
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1j2Vs_FrHvDRJB87hCW_xVWjxVyAkVKhl/view?usp=sharing",
+    "https://drive.google.com/file/d/1Cebek_7hLTpGDnBUYbb15gk84z-SlBkl/view?usp=drive_link",
 };
 
 // Your Social Media Link
@@ -103,6 +103,15 @@ const skillsSection = {
     image: require("../src/assets/images/clima.jpg"),
     link: "https://app-weather-emanuelgimenez2.vercel.app/",
     repo: "https://github.com/emanuelgimenez2/App-weather"
+  }
+  {
+    id: 4,
+    title: "Turno",
+    description:
+      "Aplication  para reservar turnos, la cual se puede adaptar a las necesidades del cliente.",
+    image: require("../src/assets/images/clima.jpg"),
+    link: "https://turno-polinave-kc492928h-emanuelgimenez2s-projects.vercel.app/",
+    repo: "https://github.com/emanuelgimenez2/turno.git"
   }
 ]
 
