@@ -96,6 +96,8 @@ const skillsSection = {
     link: "https://app-weather-emanuelgimenez2.vercel.app/",
     repo: "https://github.com/emanuelgimenez2/App-weather"
   },
+
+  
   {
     id: 3,
     title: "Turnos",
@@ -105,6 +107,8 @@ const skillsSection = {
     link: "https://turno-polinave.vercel.app/",
     repo: "https://github.com/emanuelgimenez2/turno"
   },
+
+
   {
     id: 4,
     title: "Turno",
