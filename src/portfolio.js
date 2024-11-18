@@ -14,7 +14,7 @@ const greeting = {
     \n A passionate Software Developer 🚀 having an experience of building Web applications with JavaScript / Reactjs / Nodejs and some other cool libraries and frameworks.`
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1j2Vs_FrHvDRJB87hCW_xVWjxVyAkVKhl/view?usp=sharing",
+    "https://drive.google.com/file/d/1-minpFJYkK7-c1fYRbVxBCvqDgqb500v/view?usp=sharing",
 };
 
 // Your Social Media Link
@@ -86,15 +86,7 @@ const skillsSection = {
     link: "https://api-movies-ten.vercel.app/",
     repo: "https://github.com/emanuelgimenez2/api-movies"
   },
-  {
-    id: 2,
-    title: "Contador",
-    description:
-      "Aplication that allows you to search for weather in any city.",
-    image: require("../src/assets/images/Contador.jpg"),
-    link: "https://status-counter.vercel.app/",
-    repo: "https://github.com/emanuelgimenez2/statusCounter"
-  },
+  
   {
     id: 3,
     title: "Weather App",
@@ -103,6 +95,15 @@ const skillsSection = {
     image: require("../src/assets/images/clima.jpg"),
     link: "https://app-weather-emanuelgimenez2.vercel.app/",
     repo: "https://github.com/emanuelgimenez2/App-weather"
+  },
+  {
+    id: 3,
+    title: "Turnos",
+    description:
+      "Esta aplicación está diseñada para agilizar y modernizar el proceso de gestión de turnos en la Prefectura Naval Argentina. Con una interfaz intuitiva y funcional, permite a los ciudadanos y al personal administrativo coordinar citas de manera eficiente y organizada.",
+    image: require("../src/assets/images/turno.jpeg"),
+    link: "https://turno-polinave.vercel.app/",
+    repo: "https://github.com/emanuelgimenez2/turno"
   }
 ]
 
@@ -223,6 +224,20 @@ const workExperiences = {
         "Software problems",
       ],
     },
+    // {
+    //   role: "Personal permanent",
+    //   company: "Prefectura Naval Argentina",
+    //   companylogo: require("./assets/images/prefectura_logo.jpg"),
+    //   date: "2009 – Present",
+    //   desc: `Responsible personnel in shipping, administration and IT support.`,
+    //   descBullets: [
+    //     "Personnel team",
+    //     "Management in general",
+    //     "Support to IT services",
+    //     "Solve all kinds of related errors",
+    //     "Technical support, emergency",
+    //   ],
+    // },
   ],
 };
 
