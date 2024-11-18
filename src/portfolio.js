@@ -104,7 +104,7 @@ const skillsSection = {
     image: require("../src/assets/images/turno.jpeg"),
     link: "https://turno-polinave.vercel.app/",
     repo: "https://github.com/emanuelgimenez2/turno"
-  }
+  },
   {
     id: 4,
     title: "Turno",
