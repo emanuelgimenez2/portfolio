@@ -1,24 +1,209 @@
+section.portfolio-projects-section {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
 
-.main-project{
-  padding: 20px 0px;
-  margin: 0px auto;
+.portfolio-projects-section .portfolio-projects-wrapper {
+  padding: 80px 20px;
+  margin: 0 auto;
   width: 90%;
-}
-.main-project-container{
-  padding: 0px;
-  margin: 0px auto;
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-
-
-  
- 
+  max-width: 1400px;
+  box-sizing: border-box;
 }
 
+/* Header section with gradient title and subtitle */
+.portfolio-projects-section .portfolio-projects-header {
+  text-align: center;
+  margin-bottom: 60px;
+  animation: portfolioFadeInUp 0.8s ease-out;
+}
 
+.portfolio-projects-section .portfolio-projects-title {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 800;
+  margin: 0 0 16px 0;
+  padding: 0;
+  color: #1a1a1a;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.portfolio-projects-section .portfolio-projects-highlight {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  position: relative;
+  display: inline-block;
+}
+
+.portfolio-projects-section .portfolio-projects-highlight::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 2px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: portfolioScaleIn 0.8s ease-out 0.3s forwards;
+}
+
+.portfolio-projects-section .portfolio-projects-subtitle {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  color: #666;
+  font-weight: 400;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Grid layout mejorado para mejor responsividad */
+.portfolio-projects-section .portfolio-projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 32px;
+  padding: 0;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Animations for smooth entrance */
+@keyframes portfolioFadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes portfolioScaleIn {
+  to {
+    transform: scaleX(1);
+  }
+}
+
+/* Tablet responsive - 2 columns */
+@media (max-width: 1024px) {
+  .portfolio-projects-section .portfolio-projects-wrapper {
+    padding: 60px 20px;
+    width: 92%;
+  }
+
+  .portfolio-projects-section .portfolio-projects-header {
+    margin-bottom: 48px;
+  }
+
+  .portfolio-projects-section .portfolio-projects-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 24px;
+  }
+}
+
+/* Tablet pequeña */
 @media (max-width: 768px) {
-  .main-project-container {
-    flex-direction: column;
+  .portfolio-projects-section .portfolio-projects-wrapper {
+    padding: 50px 16px;
+    width: 94%;
+  }
+
+  .portfolio-projects-section .portfolio-projects-header {
+    margin-bottom: 40px;
+  }
+
+  .portfolio-projects-section .portfolio-projects-title {
+    margin-bottom: 12px;
+  }
+
+  .portfolio-projects-section .portfolio-projects-subtitle {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .portfolio-projects-section .portfolio-projects-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+/* Mobile optimization - aquí está el fix principal */
+@media (max-width: 600px) {
+  .portfolio-projects-section .portfolio-projects-wrapper {
+    padding: 40px 12px;
+    width: 96%;
+  }
+
+  .portfolio-projects-section .portfolio-projects-header {
+    margin-bottom: 32px;
+  }
+
+  .portfolio-projects-section .portfolio-projects-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    /* Asegura que las cards no se salgan */
+    max-width: 100%;
+  }
+}
+
+/* Small mobile optimization */
+@media (max-width: 480px) {
+  .portfolio-projects-section .portfolio-projects-wrapper {
+    padding: 32px 8px;
+    width: 98%;
+  }
+
+  .portfolio-projects-section .portfolio-projects-header {
+    margin-bottom: 28px;
+  }
+
+  .portfolio-projects-section .portfolio-projects-title {
+    font-size: clamp(1.75rem, 7vw, 2.5rem);
+  }
+
+  .portfolio-projects-section .portfolio-projects-subtitle {
+    font-size: 0.95rem;
+    padding: 0 8px;
+  }
+
+  .portfolio-projects-section .portfolio-projects-highlight::after {
+    height: 3px;
+    bottom: -6px;
+  }
+
+  .portfolio-projects-section .portfolio-projects-grid {
+    gap: 16px;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 360px) {
+  .portfolio-projects-section .portfolio-projects-wrapper {
+    padding: 28px 6px;
+    width: 99%;
+  }
+
+  .portfolio-projects-section .portfolio-projects-grid {
+    gap: 14px;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .portfolio-projects-section .portfolio-projects-title {
+    color: #f5f5f5;
+  }
+
+  .portfolio-projects-section .portfolio-projects-subtitle {
+    color: #a0a0a0;
   }
 }

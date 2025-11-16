@@ -14,7 +14,7 @@ const greeting = {
     \n A passionate Software Developer 🚀 having an experience of building Web applications with JavaScript / Reactjs / Nodejs and some other cool libraries and frameworks.`
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1j2Vs_FrHvDRJB87hCW_xVWjxVyAkVKhl/view?usp=sharing",
+    "https://drive.google.com/file/d/1-minpFJYkK7-c1fYRbVxBCvqDgqb500v/view?usp=sharing",
 };
 
 // Your Social Media Link

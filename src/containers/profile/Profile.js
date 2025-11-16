@@ -1,5 +1,5 @@
 import React, { useState, useEffect, lazy, Suspense } from "react";
-import ApolloClient, { gql } from "apollo-boost";
+import { ApolloClient, InMemoryCache, HttpLink, gql } from "@apollo/client";
 import { openSource } from "../../portfolio";
 import Contact from "../contact/Contact";
 import Loading from "../loading/Loading";
@@ -15,43 +15,42 @@ export default function Profile() {
   }
 
   function getProfileData() {
-    const client = new ApolloClient({
+  const client = new ApolloClient({
+    link: new HttpLink({
       uri: "https://api.github.com/graphql",
-      request: (operation) => {
-        operation.setContext({
-          headers: {
-            authorization: `Bearer ${openSource.githubConvertedToken}`,
-          },
-        });
+      headers: {
+        authorization: `Bearer ${openSource.githubConvertedToken}`,
       },
-    });
+    }),
+    cache: new InMemoryCache(),
+  });
 
-    client
-      .query({
-        query: gql`
-      {
-        user(login:"${openSource.githubUserName}") { 
-          name
-          bio
-          isHireable
-          avatarUrl
-          location
+  client
+    .query({
+      query: gql`
+        {
+          user(login: "${openSource.githubUserName}") {
+            name
+            bio
+            isHireable
+            avatarUrl
+            location
+          }
         }
-    }
       `,
-      })
-      .then((result) => {
-        setProfileFunction(result.data.user);
-      })
-      .catch(function (error) {
-        console.log(error);
-        setProfileFunction("Error");
-        console.log(
-          "Because of this Error Contact Section is Showed instead of Profile"
-        );
-        openSource.showGithubProfile = "false";
-      });
-  }
+    })
+    .then((result) => {
+      setProfileFunction(result.data.user);
+    })
+    .catch((error) => {
+      console.error(error);
+      setProfileFunction("Error");
+      console.log(
+        "Because of this Error Contact Section is Showed instead of Profile"
+      );
+      openSource.showGithubProfile = "false";
+    });
+}
 
   useEffect(() => {
     if (openSource.showGithubProfile === "true") {
