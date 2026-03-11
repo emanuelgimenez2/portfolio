@@ -1,10 +1,8 @@
-"use client"
-
 import { useContext } from "react"
 import "./Skills.css"
 import SoftwareSkill from "../../components/softwareSkills/SoftwareSkill"
 import { skillsSection } from "../../portfolio"
-import { Fade } from "react-reveal"
+import FadeIn from "../../components/fadeIn/FadeIn"
 import StyleContext from "../../contexts/StyleContext"
 
 export default function Skills() {
@@ -12,8 +10,7 @@ export default function Skills() {
   return (
     <div className={isDark ? "dark-mode main" : "main"} id="skills">
       <div className="portfolio-skills-container">
-        
-        <Fade right duration={1000}>
+        <FadeIn direction="right" duration={1000}>
           <div className="portfolio-skills-content">
             <h1 className={isDark ? "dark-mode portfolio-skills-heading" : "portfolio-skills-heading"}>
               {skillsSection.title}
@@ -25,14 +22,8 @@ export default function Skills() {
             <div className="portfolio-skills-icons-wrapper">
               <SoftwareSkill />
             </div>
-
-            <div className="portfolio-skills-list">
-              {skillsSection.skills.map((skills, index) => {
-               
-              })}
-            </div>
           </div>
-        </Fade>
+        </FadeIn>
       </div>
     </div>
   )

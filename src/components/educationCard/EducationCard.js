@@ -1,5 +1,5 @@
 import React, { createRef, useContext } from "react";
-import { Fade, Slide } from "react-reveal";
+import FadeIn from "../fadeIn/FadeIn";
 import "./EducationCard.css";
 import StyleContext from "../../contexts/StyleContext";
 
@@ -14,7 +14,7 @@ export default function EducationCard({ school }) {
   const { isDark } = useContext(StyleContext);
   return (
     <div>
-      <Fade left duration={1000}>
+      <FadeIn direction="left" duration={1000}>
         <div className="education-card">
           <div className="education-card-left">
             <img
@@ -23,6 +23,7 @@ export default function EducationCard({ school }) {
               className="education-roundedimg"
               src={school.logo}
               alt={school.schoolName}
+              loading="lazy"
             />
           </div>
           <div className="education-card-right">
@@ -47,17 +48,15 @@ export default function EducationCard({ school }) {
               </p>
               <p className="education-text-desc">{school.desc}</p>
               <div className="education-text-bullets">
-                <ul >
+                <ul>
                   <GetDescBullets descBullets={school.descBullets} />
                 </ul>
               </div>
             </div>
           </div>
         </div>
-      </Fade>
-      <Slide left duration={2000}>
-        <div className="education-card-border"></div>
-      </Slide>
+      </FadeIn>
+      <div className="education-card-border"></div>
     </div>
   );
 }

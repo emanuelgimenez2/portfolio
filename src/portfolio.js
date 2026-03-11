@@ -1,23 +1,14 @@
-﻿/* Change this file to get your personal Portfolio */
-
-// Your Summary And Greeting Section
-
 import emoji from "react-easy-emoji";
 
 const greeting = {
-  /* Your Summary And Greeting Section */
   username: "Emanuel Gimenez",
-  title: "Hi all, I'm Emanuel",
+  title: "Hola, soy Emanuel",
   subTitle: emoji(
-    `Full Stack Web Developer.
-
-    \n A passionate Software Developer 🚀 having an experience of building Web applications with JavaScript / Reactjs / Nodejs and some other cool libraries and frameworks.`
+    `Desarrollador Full Stack Web 🚀 con experiencia construyendo aplicaciones web con JavaScript, React, Node.js y otras tecnologías modernas.`
   ),
   resumeLink:
     "https://drive.google.com/file/d/1-minpFJYkK7-c1fYRbVxBCvqDgqb500v/view?usp=sharing",
 };
-
-// Your Social Media Link
 
 const socialMediaLinks = {
   github: "https://github.com/emanuelgimenez2",
@@ -27,20 +18,17 @@ const socialMediaLinks = {
   instagram: "https://www.instagram.com/manurauns/",
 };
 
-// Your Skills Section
-
 const skillsSection = {
-  title: "Skill",
+  title: "Skills",
   subTitle: "FULL STACK DEVELOPER",
-  skills: [emoji(" ")],
-
+  skills: [],
   softwareSkills: [
     {
-      skillName: "html-5",
+      skillName: "HTML5",
       fontAwesomeClassname: "fab fa-html5",
     },
     {
-      skillName: "css3",
+      skillName: "CSS3",
       fontAwesomeClassname: "fab fa-css3-alt",
     },
     {
@@ -48,11 +36,11 @@ const skillsSection = {
       fontAwesomeClassname: "fab fa-js",
     },
     {
-      skillName: "reactjs",
+      skillName: "React",
       fontAwesomeClassname: "fab fa-react",
     },
     {
-      skillName: "nodejs",
+      skillName: "Node.js",
       fontAwesomeClassname: "fab fa-node",
     },
     {
@@ -60,252 +48,182 @@ const skillsSection = {
       fontAwesomeClassname: "fab fa-npm",
     },
     {
-      skillName: "sql-database",
+      skillName: "SQL",
       fontAwesomeClassname: "fas fa-database",
     },
-    // {
-    //   skillName: "aws",
-    //   fontAwesomeClassname: "fab fa-aws",
-    // },
-    // {
-    //   skillName: "firebase",
-    //   fontAwesomeClassname: "fas fa-fire",
-    // },
   ],
 };
 
- //Your education background
- const projects = 
-   [
+const projects = [
   {
     id: 1,
     title: "Movies",
     description:
-      "Aplication that allows you to search for movies and shows, and save them in your favorites.",
+      "Aplicacion que permite buscar peliculas y series, y guardarlas en tus favoritos.",
     image: require("../src/assets/images/movies-page.jpg"),
     link: "https://api-movies-ten.vercel.app/",
-    repo: "https://github.com/emanuelgimenez2/api-movies"
+    repo: "https://github.com/emanuelgimenez2/api-movies",
   },
-  
   {
-    id: 3,
+    id: 2,
     title: "Weather App",
     description:
-      "Aplication that allows you to search for weather in any city.",
+      "Aplicacion que permite consultar el clima de cualquier ciudad del mundo.",
     image: require("../src/assets/images/clima.jpg"),
     link: "https://app-weather-emanuelgimenez2.vercel.app/",
-    repo: "https://github.com/emanuelgimenez2/App-weather"
+    repo: "https://github.com/emanuelgimenez2/App-weather",
   },
-
-  
   {
     id: 3,
-    title: "Turnos",
+    title: "Turnos - Prefectura Naval",
     description:
-      "Esta aplicación está diseñada para agilizar y modernizar el proceso de gestión de turnos en la Prefectura Naval Argentina. Con una interfaz intuitiva y funcional, permite a los ciudadanos y al personal administrativo coordinar citas de manera eficiente y organizada.",
+      "Aplicacion diseñada para agilizar y modernizar la gestion de turnos en la Prefectura Naval Argentina. Interfaz intuitiva que permite a ciudadanos y personal administrativo coordinar citas de manera eficiente.",
     image: require("../src/assets/images/turno.jpeg"),
     link: "https://turno-polinave.vercel.app/",
-    repo: "https://github.com/emanuelgimenez2/turno"
+    repo: "https://github.com/emanuelgimenez2/turno",
   },
-
-
-  {
-    id: 4,
-    title: "Turno",
-    description:
-      "Aplication  para reservar turnos, la cual se puede adaptar a las necesidades del cliente.",
-    image: require("../src/assets/images/clima.jpg"),
-    link: "https://turno-polinave-kc492928h-emanuelgimenez2s-projects.vercel.app/",
-    repo: "https://github.com/emanuelgimenez2/turno.git"
-  }
-]
-
-
- 
-
+];
 
 const educationInfo = {
-  viewEducation: true, // Set it to true to see education section
+  viewEducation: true,
   schools: [
     {
       schoolName:
-        "Facultad de Ciencia y Tecnología, Sede Concepción del Uruguay",
+        "Facultad de Ciencia y Tecnologia, Sede Concepcion del Uruguay",
       logo: require("./assets/images/logo_fcyt.png"),
-      subHeader: "Licenciatura en Sistemas de Información",
-      duration: "April 2008",
+      subHeader: "Licenciatura en Sistemas de Informacion",
+      duration: "Abril 2008",
     },
     {
       schoolName: "FreeCodeCamp.org",
       logo: require("./assets/images/logo_freecodecamp.jfif"),
       subHeader: "Responsive Web Design",
-      duration: "June 2020 - October 2020",
+      duration: "Junio 2020 - Octubre 2020",
       descBullets: [
-     " hTML5 | CSS3 | JavaScript ",
-     " Data Structures | Algoritmos",
-      
+        "HTML5 | CSS3 | JavaScript",
+        "Data Structures | Algoritmos",
       ],
     },
     {
-      schoolName: "Google Actívate",
+      schoolName: "Google Activate",
       logo: require("./assets/images/google_activate.jpg"),
-      subHeader: "Introduction to Web Development Course: HTML y CSS",
-      duration: "October 2021",
+      subHeader: "Curso de Introduccion al Desarrollo Web: HTML y CSS",
+      duration: "Octubre 2021",
       descBullets: [
-
-        "History | Operation | Writing ",
-        "Publication | Structuring | Presentation ",
-        "Elements | Layout | Exit",
-         
-         ],
+        "Historia | Funcionamiento | Escritura",
+        "Publicacion | Estructura | Presentacion",
+        "Elementos | Layout",
+      ],
     },
     {
       schoolName: "Platzi",
       logo: require("./assets/images/platzy-logo.jpg"),
       subHeader: "Escuela de Desarrollo Web",
-      duration: "October 2021",
+      duration: "Octubre 2021",
       descBullets: [
-        "CodeSteam | Git y Github | JavaScript | Data Structure",        
+        "CodeStream | Git y Github | JavaScript | Data Structures",
         "ECMAScript 6+ | APIs | ReactJS | NodeJS | MongoDB",
-        
-        ], 
+      ],
     },
     {
       schoolName: "soyHenry",
       logo: require("./assets/images/soyHenry.png"),
       subHeader: "Full Stack Developer",
-      duration: "currently in course",
-       descBullets: [
-      "hTML5 | CSS3 | JavaScript | Git | Basic Testing",        
-       " AJAX | Webpack | ReactJS | Redux | React-Redux",
-       " NodeJs | Web servers (Express) | TypeScript",
-        "SQL | Postgres | MySQL | Authentication",
-      ], 
+      duration: "En curso",
+      descBullets: [
+        "HTML5 | CSS3 | JavaScript | Git | Testing",
+        "AJAX | Webpack | ReactJS | Redux | React-Redux",
+        "NodeJS | Express | TypeScript",
+        "SQL | PostgreSQL | MySQL | Autenticacion",
+      ],
     },
   ],
 };
 
-// Your top 3 proficient stacks/tech experience
-
 const techStack = {
-  viewSkillBars: false, //Set it to true to show Proficiency Section
+  viewSkillBars: false,
   experience: [
     {
-      Stack: "Frontend", //Insert stack or technology you have experience in
-      progressPercentage: "70%", //Insert relative proficiency in percentage
+      Stack: "Frontend",
+      progressPercentage: "70%",
     },
     {
       Stack: "Backend",
       progressPercentage: "80%",
     },
     {
-      Stack: "Programming",
+      Stack: "Programacion",
       progressPercentage: "60%",
     },
   ],
 };
 
-// Your top 3 work experiences
 const workExperiences = {
-  viewExperiences: true, //Set it to true to show workExperiences Section
+  viewExperiences: true,
   experience: [
     {
-      role: "Personal permanent",
+      role: "Personal permanente",
       company: "Prefectura Naval Argentina",
       companylogo: require("./assets/images/prefectura_logo.jpg"),
-      date: "2009 – Present",
-      desc: `Responsible personnel in shipping, administration and IT support.`,
+      date: "2009 – Presente",
+      desc: "Personal responsable en despacho, administracion y soporte IT.",
       descBullets: [
-        "Personnel team",
-        "Management in general",
-        "Support to IT services",
-        "Solve all kinds of related errors",
-        "Technical support, emergency",
+        "Equipo de personal",
+        "Gestion general",
+        "Soporte a servicios IT",
+        "Resolucion de errores",
+        "Soporte tecnico de emergencia",
       ],
     },
-
     {
       role: "Help Desk",
-      company: "FreeLancer",
+      company: "Freelancer",
       companylogo: require("./assets/images/helpdesk.png"),
-      date: "2010 – Present",
-      desc: `Solve individuals and companies problems`,
+      date: "2010 – Presente",
+      desc: "Resolucion de problemas informaticos para particulares y empresas.",
       descBullets: [
         "MS Windows, MS Office",
-        "Networking",
-        "Printers",
-        "Hardware problems",
-        "Software problems",
+        "Redes",
+        "Impresoras",
+        "Problemas de hardware",
+        "Problemas de software",
       ],
     },
-    // {
-    //   role: "Personal permanent",
-    //   company: "Prefectura Naval Argentina",
-    //   companylogo: require("./assets/images/prefectura_logo.jpg"),
-    //   date: "2009 – Present",
-    //   desc: `Responsible personnel in shipping, administration and IT support.`,
-    //   descBullets: [
-    //     "Personnel team",
-    //     "Management in general",
-    //     "Support to IT services",
-    //     "Solve all kinds of related errors",
-    //     "Technical support, emergency",
-    //   ],
-    // },
   ],
 };
 
-//  Your Open Source Section to View Your Github Pinned Projects
-// To know how to get github key look at readme.md 
- const openSource = {
-  githubConvertedToken:"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",
-  githubUserName: "emanuelgimenez2", // Change to your github username to view your profile in Contact Section.
-  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to false
+const openSource = {
+  githubUserName: "emanuelgimenez2",
+  showGithubProfile: "true",
 };
- 
-// Some Big Projects You have worked with your company
+
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
-  projects: [
-    {
-      
-      link: "https://www.behance.net/gallery/58937147/Freiheit",
-      github: ""
-    },
-
-
-  ],
+  title: "Proyectos Grandes",
+  subtitle: "STARTUPS Y EMPRESAS EN LAS QUE COLABORE",
+  projects: [],
 };
 
-// Your Achievement Section Include Your Certification Talks and More
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
+  title: emoji("Logros y Certificaciones 🏆"),
   subtitle: "",
 };
 
-// Talks Sections
 const talkSection = {
-  title: "TALKS",
-  subtitle: emoji(
-    "I LOVE TO SHARE MY LIMITED KNOWLEDGE  😅"
-  ),
-
+  title: "CHARLAS",
+  subtitle: emoji("ME ENCANTA COMPARTIR LO QUE APRENDO 😅"),
   talks: [],
 };
 
-
-
 const contactInfo = {
-  title: emoji("Contact Me ☎️"),
+  title: emoji("Contactame ☎️"),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
+    "Queres hablar de un proyecto o simplemente saludar? Mi bandeja esta abierta para todos.",
   number: "+5493442533465",
   email_address: "emanuelgimenez2@gmail.com",
 };
 
-//Twitter Section
 const twitterDetails = {
-  userName: "", //Replace "twitter" with your twitter username without @
+  userName: "",
 };
 
 export {
@@ -320,7 +238,6 @@ export {
   achievementSection,
   talkSection,
   projects,
- 
   contactInfo,
   twitterDetails,
 };

@@ -1,12 +1,12 @@
 import React from "react";
 import "./Progress.css";
 import { techStack } from "../../portfolio";
-import { Fade } from "react-reveal";
+import FadeIn from "../../components/fadeIn/FadeIn";
 
 export default function StackProgress() {
     if(techStack.viewSkillBars){
         return (
-            <Fade bottom duration={1000} distance="20px">
+            <FadeIn direction="bottom" duration={1000} distance="20px">
             <div className="skills-container">
 
                 <div className="skills-bar">
@@ -31,7 +31,7 @@ export default function StackProgress() {
                 </div>
 
             </div>
-            </Fade>
+            </FadeIn>
         );
     }
     return null;

@@ -4,7 +4,7 @@ export default function Card({ title, description, image, link, repo }) {
   return (
     <article className="portfolio-card">
       <div className="portfolio-card-image-wrapper">
-        <img src={image || "/placeholder.svg"} alt={title} className="portfolio-card-image" />
+        <img src={image || "/placeholder.svg"} alt={title} className="portfolio-card-image" loading="lazy" />
         <div className="portfolio-card-overlay"></div>
       </div>
 

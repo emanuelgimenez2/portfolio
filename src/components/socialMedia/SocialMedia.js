@@ -10,6 +10,7 @@ export default function socialMedia() {
           href={socialMediaLinks.github}
           className="icon-button github"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <i className="fab fa-github"></i>
           <span></span>
@@ -21,6 +22,7 @@ export default function socialMedia() {
           href={socialMediaLinks.linkedin}
           className="icon-button linkedin"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <i className="fab fa-linkedin-in"></i>
           <span></span>
@@ -32,6 +34,7 @@ export default function socialMedia() {
           href={`mailto:${socialMediaLinks.gmail}`}
           className="icon-button google"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <i className="fab fa-google"></i>
           <span></span>
@@ -43,6 +46,7 @@ export default function socialMedia() {
           href={socialMediaLinks.gitlab}
           className="icon-button gitlab"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <i className="fab fa-gitlab"></i>
           <span></span>
@@ -54,6 +58,7 @@ export default function socialMedia() {
           href={socialMediaLinks.facebook}
           className="icon-button facebook"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <i className="fab fa-facebook-f"></i>
           <span></span>
@@ -65,6 +70,7 @@ export default function socialMedia() {
           href={socialMediaLinks.instagram}
           className="icon-button instagram"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <i className="fab fa-instagram"></i>
           <span></span>
@@ -74,6 +80,7 @@ export default function socialMedia() {
       {socialMediaLinks.twitter ? (
         <a
           target="_blank"
+          rel="noopener noreferrer"
           href={socialMediaLinks.twitter}
           className="icon-button twitter"
         >
@@ -87,6 +94,7 @@ export default function socialMedia() {
           href={socialMediaLinks.medium}
           className="icon-button medium"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <i className="fab fa-medium"></i>
           <span></span>
@@ -97,6 +105,7 @@ export default function socialMedia() {
         <a
           href={socialMediaLinks.stackoverflow}
           target="_blank"
+          rel="noopener noreferrer"
           className="icon-button stack-overflow"
         >
           <i className="fab fa-stack-overflow"></i>
@@ -109,6 +118,7 @@ export default function socialMedia() {
           href={socialMediaLinks.whatsapp}
           className="icon-button whatsapp"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <i className="fab fa-whatsapp"></i>
           <span></span>

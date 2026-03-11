@@ -1,6 +1,5 @@
 /* Header Base Styles */
 .header {
-  background-color: #ffffff;
   backdrop-filter: blur(10px);
   background-color: rgba(255, 255, 255, 0.95);
   max-width: 100%;

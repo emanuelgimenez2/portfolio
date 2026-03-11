@@ -192,22 +192,20 @@ article.portfolio-edu-card:hover .portfolio-edu-card-decoration {
 }
 
 /* Dark Mode Support */
-@media (prefers-color-scheme: dark) {
-  article.portfolio-edu-card {
-    background: linear-gradient(135deg, rgba(30, 41, 59, 0.95) 0%, rgba(51, 65, 85, 0.9) 100%) !important;
-    border-color: rgba(102, 126, 234, 0.3) !important;
-  }
+.dark-mode article.portfolio-edu-card {
+  background: linear-gradient(135deg, rgba(30, 41, 59, 0.95) 0%, rgba(51, 65, 85, 0.9) 100%) !important;
+  border-color: rgba(102, 126, 234, 0.3) !important;
+}
 
-  .portfolio-edu-card .portfolio-edu-card-school {
-    color: #f8fafc !important;
-  }
+.dark-mode .portfolio-edu-card .portfolio-edu-card-school {
+  color: #f8fafc !important;
+}
 
-  .portfolio-edu-card .portfolio-edu-card-description {
-    color: #94a3b8 !important;
-  }
+.dark-mode .portfolio-edu-card .portfolio-edu-card-description {
+  color: var(--color-text-muted) !important;
+}
 
-  .portfolio-edu-card .portfolio-edu-card-duration {
-    background: rgba(102, 126, 234, 0.2) !important;
-    color: #a5b4fc !important;
-  }
+.dark-mode .portfolio-edu-card .portfolio-edu-card-duration {
+  background: rgba(102, 126, 234, 0.2) !important;
+  color: #a5b4fc !important;
 }
