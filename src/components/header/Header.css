@@ -163,7 +163,7 @@
   display: none;
 }
 
-.header .menu-btn:checked ~ .menu {
+.header .menu-btn:checked ~ nav .menu {
   max-height: 600px;
 }
 

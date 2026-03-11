@@ -1,10 +1,10 @@
 .footer-text {
   text-align: center;
-  color: #868e96 !important;
+  color: var(--color-text-muted);
 }
 
-.dark-mode {
-  color: white !important;
+.dark-mode .footer-text {
+  color: var(--color-text-secondary);
 }
 
 .footer-div {
