@@ -20,14 +20,12 @@ const socialMediaLinks = {
   linkedin: "https://www.linkedin.com/in/emanuel-gimenez/",
   gmail: "emanuelgimenez2@gmail.com",
   whatsapp: "https://walink.co/664eed",
-  instagram: "https://www.instagram.com/manurauns/",
   instagramServitec: "https://www.instagram.com/servitec.cdelu/",
 };
 
 const skillsSection = {
   title: "Skills",
   subTitle: "TECNOLOGIAS QUE USO PARA DAR VIDA A LOS PROYECTOS",
-  skills: [],
   skillCategories: [
     {
       title: "Frontend",
@@ -136,7 +134,6 @@ const projects = [
 ];
 
 const educationInfo = {
-  viewEducation: true,
   schools: [
     {
       schoolName: "soyHenry",
@@ -150,8 +147,7 @@ const educationInfo = {
       ],
     },
     {
-      schoolName:
-        "Universidad Autonoma de Entre Rios (UADER)",
+      schoolName: "Universidad Autonoma de Entre Rios (UADER)",
       logo: require("./assets/images/logo_fcyt.png"),
       subHeader: "Lic. en Sistemas de Informacion",
       duration: "2011",
@@ -168,7 +164,7 @@ const educationInfo = {
     },
     {
       schoolName: "LinkedIn Learning",
-      logo: require("./assets/images/logo_freecodecamp.jfif"),
+      logo: require("./assets/images/helpdesk.png"),
       subHeader: "React Esencial",
       duration: "2021",
     },
@@ -183,11 +179,6 @@ const educationInfo = {
 
 const techStack = {
   viewSkillBars: false,
-  experience: [
-    { Stack: "Frontend", progressPercentage: "85%" },
-    { Stack: "Backend", progressPercentage: "80%" },
-    { Stack: "Bases de Datos", progressPercentage: "75%" },
-  ],
 };
 
 const workExperiences = {
@@ -236,33 +227,11 @@ const openSource = {
   showGithubProfile: "true",
 };
 
-const bigProjects = {
-  title: "Proyectos Grandes",
-  subtitle: "CLIENTES DE SERVITEC",
-  projects: [],
-};
-
-const achievementSection = {
-  title: emoji("Logros y Certificaciones 🏆"),
-  subtitle: "",
-};
-
-const talkSection = {
-  title: "CHARLAS",
-  subtitle: emoji("ME ENCANTA COMPARTIR LO QUE APRENDO 😅"),
-  talks: [],
-};
-
 const contactInfo = {
   title: emoji("Contactame ☎️"),
   subtitle:
     "Tenes un proyecto en mente? Queres una cotizacion para tu idea? Escribime y hablamos.",
-  number: "+5493442533465",
   email_address: "emanuelgimenez2@gmail.com",
-};
-
-const twitterDetails = {
-  userName: "",
 };
 
 export {
@@ -273,10 +242,6 @@ export {
   techStack,
   workExperiences,
   openSource,
-  bigProjects,
-  achievementSection,
-  talkSection,
   projects,
   contactInfo,
-  twitterDetails,
 };

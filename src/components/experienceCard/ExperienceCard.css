@@ -102,7 +102,7 @@
 }
 
 .dark-mode-text {
-  color: var(--color-text) !important;
+  color: var(--color-text);
 }
 
 .experience-text-date {

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useCallback } from "react";
 import { StyleProvider } from "../contexts/StyleContext";
 import Header from "../components/header/Header";
 import Greeting from "./greeting/Greeting";
