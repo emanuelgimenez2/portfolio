@@ -65,18 +65,6 @@ export default function socialMedia() {
         </a>
       ) : null}
 
-      {socialMediaLinks.instagram ? (
-        <a
-          href={socialMediaLinks.instagram}
-          className="icon-button instagram"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i className="fab fa-instagram"></i>
-          <span></span>
-        </a>
-      ) : null}
-
       {socialMediaLinks.twitter ? (
         <a
           target="_blank"
@@ -128,10 +116,9 @@ export default function socialMedia() {
       {socialMediaLinks.instagramServitec ? (
         <a
           href={socialMediaLinks.instagramServitec}
-          className="icon-button instagram-servitec"
+          className="icon-button instagram"
           target="_blank"
           rel="noopener noreferrer"
-          title="Servitec"
         >
           <i className="fab fa-instagram"></i>
           <span></span>
