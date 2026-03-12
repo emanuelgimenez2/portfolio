@@ -21,6 +21,7 @@ const socialMediaLinks = {
   gmail: "emanuelgimenez2@gmail.com",
   whatsapp: "https://walink.co/664eed",
   instagram: "https://www.instagram.com/manurauns/",
+  instagramServitec: "https://www.instagram.com/servitec.cdelu/",
 };
 
 const skillsSection = {

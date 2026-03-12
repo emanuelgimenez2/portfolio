@@ -48,6 +48,16 @@ export default function Footer() {
                 <i className="fab fa-whatsapp"></i>
               </a>
             )}
+            {socialMediaLinks.instagram && (
+              <a href={socialMediaLinks.instagram} target="_blank" rel="noopener noreferrer" className="portfolio-footer-social-icon" aria-label="Instagram">
+                <i className="fab fa-instagram"></i>
+              </a>
+            )}
+            {socialMediaLinks.instagramServitec && (
+              <a href={socialMediaLinks.instagramServitec} target="_blank" rel="noopener noreferrer" className="portfolio-footer-social-icon" aria-label="Servitec Instagram">
+                <i className="fab fa-instagram"></i>
+              </a>
+            )}
           </div>
 
           <div className="portfolio-footer-divider"></div>

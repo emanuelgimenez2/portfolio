@@ -124,6 +124,19 @@ export default function socialMedia() {
           <span></span>
         </a>
       ) : null}
+
+      {socialMediaLinks.instagramServitec ? (
+        <a
+          href={socialMediaLinks.instagramServitec}
+          className="icon-button instagram-servitec"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Servitec"
+        >
+          <i className="fab fa-instagram"></i>
+          <span></span>
+        </a>
+      ) : null}
     </div>
   );
 }
