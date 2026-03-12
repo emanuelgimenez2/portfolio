@@ -1,39 +1,47 @@
+/* ============================================
+   Button Component
+   ============================================ */
+
 .main-button {
-  background-color: var(--color-primary);
-  border: solid 1px var(--color-primary);
+  background: var(--color-gradient-btn-primary);
+  border: none;
   color: white;
-  font-weight: 700;
+  font-weight: 600;
   width: max-content;
-  padding: 13px 22px;
-  margin-right: 50px;
+  padding: 12px 28px;
   text-transform: uppercase;
-  border-radius: 6px;
+  border-radius: var(--radius-full);
   text-align: center;
   text-decoration: none;
-  display: block;
-  margin-top: 20px;
-  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-top: var(--space-lg);
+  font-size: var(--text-sm);
+  letter-spacing: 0.05em;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
+  transition: all var(--transition-base);
+  box-shadow: 0 4px 15px rgba(79, 70, 229, 0.25);
 }
 
 .main-button:hover {
-  background-color: #ffffff;
-  color: var(--color-primary);
-  transform: translateY(-3px);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(79, 70, 229, 0.35);
 }
 
-/* Media Query */
+/* ========== Responsive ========== */
 @media (max-width: 768px) {
   .main-button {
-    font-size: 15px;
-    padding: 12px 18px;
-    margin-right: 0px;
+    font-size: var(--text-sm);
+    padding: 11px 24px;
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 480px) {
   .main-button {
-    font-size: 12px;
+    padding: 10px 20px;
+    font-size: var(--text-xs);
+    width: 100%;
+    justify-content: center;
   }
 }
