@@ -133,16 +133,6 @@ const projects = [
     repo: "https://github.com/emanuelgimenez2/turno",
     tech: ["React", "Node.js", "Express", "PostgreSQL"],
   },
-  {
-    id: 4,
-    title: "Movies App",
-    description:
-      "Aplicacion que permite buscar peliculas y series consumiendo API externa, guardar favoritos y explorar tendencias. Interfaz moderna y responsive.",
-    image: require("../src/assets/images/movies-page.jpg"),
-    link: "https://api-movies-ten.vercel.app/",
-    repo: "https://github.com/emanuelgimenez2/api-movies",
-    tech: ["React", "Redux", "API REST", "CSS3"],
-  },
 ];
 
 const educationInfo = {
