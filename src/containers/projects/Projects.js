@@ -7,11 +7,12 @@ export default function Projects(props) {
     <section className="portfolio-projects-section">
       <div className="portfolio-projects-wrapper">
         <div className="portfolio-projects-header">
+          <span className="portfolio-projects-badge">Portfolio</span>
           <h1 className="portfolio-projects-title">
             Mis <span className="portfolio-projects-highlight">Proyectos</span>
           </h1>
           <p className="portfolio-projects-subtitle">
-            Una selección de proyectos en los que he trabajado
+            Clientes de Servitec y proyectos personales
           </p>
         </div>
 
@@ -24,6 +25,8 @@ export default function Projects(props) {
               image={project.image}
               link={project.link}
               repo={project.repo}
+              tech={project.tech || []}
+              index={index}
             />
           ))}
         </div>

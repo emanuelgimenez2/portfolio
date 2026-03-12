@@ -7,18 +7,33 @@ section.portfolio-projects-section {
 }
 
 .portfolio-projects-section .portfolio-projects-wrapper {
-  padding: 80px 20px;
+  padding: 100px 20px;
   margin: 0 auto;
   width: 90%;
   max-width: 1400px;
   box-sizing: border-box;
 }
 
-/* Header section with gradient title and subtitle */
+/* Header section */
 .portfolio-projects-section .portfolio-projects-header {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 64px;
   animation: portfolioFadeInUp 0.8s ease-out;
+}
+
+/* Badge above title */
+.portfolio-projects-badge {
+  display: inline-block;
+  padding: 6px 20px;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  background: rgba(99, 102, 241, 0.08);
+  color: var(--color-accent-1);
+  border: 1px solid rgba(99, 102, 241, 0.15);
+  margin-bottom: 20px;
 }
 
 .portfolio-projects-section .portfolio-projects-title {
@@ -26,13 +41,13 @@ section.portfolio-projects-section {
   font-weight: 800;
   margin: 0 0 16px 0;
   padding: 0;
-  color: #1a1a1a;
+  color: var(--color-text);
   letter-spacing: -0.02em;
   line-height: 1.2;
 }
 
 .portfolio-projects-section .portfolio-projects-highlight {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: var(--color-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -47,7 +62,7 @@ section.portfolio-projects-section {
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: var(--color-gradient);
   border-radius: 2px;
   transform: scaleX(0);
   transform-origin: left;
@@ -56,7 +71,7 @@ section.portfolio-projects-section {
 
 .portfolio-projects-section .portfolio-projects-subtitle {
   font-size: clamp(1rem, 2vw, 1.25rem);
-  color: #666;
+  color: var(--color-text-secondary);
   font-weight: 400;
   max-width: 600px;
   margin: 0 auto;
@@ -64,10 +79,10 @@ section.portfolio-projects-section {
   line-height: 1.6;
 }
 
-/* Grid layout mejorado para mejor responsividad */
+/* Grid layout */
 .portfolio-projects-section .portfolio-projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
   gap: 32px;
   padding: 0;
   margin: 0 auto;
@@ -75,7 +90,7 @@ section.portfolio-projects-section {
   box-sizing: border-box;
 }
 
-/* Animations for smooth entrance */
+/* Animations */
 @keyframes portfolioFadeInUp {
   from {
     opacity: 0;
@@ -93,10 +108,10 @@ section.portfolio-projects-section {
   }
 }
 
-/* Tablet responsive - 2 columns */
+/* Tablet */
 @media (max-width: 1024px) {
   .portfolio-projects-section .portfolio-projects-wrapper {
-    padding: 60px 20px;
+    padding: 70px 20px;
     width: 92%;
   }
 
@@ -105,15 +120,14 @@ section.portfolio-projects-section {
   }
 
   .portfolio-projects-section .portfolio-projects-grid {
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 24px;
   }
 }
 
-/* Tablet pequeña */
 @media (max-width: 768px) {
   .portfolio-projects-section .portfolio-projects-wrapper {
-    padding: 50px 16px;
+    padding: 60px 16px;
     width: 94%;
   }
 
@@ -136,10 +150,9 @@ section.portfolio-projects-section {
   }
 }
 
-/* Mobile optimization - aquí está el fix principal */
 @media (max-width: 600px) {
   .portfolio-projects-section .portfolio-projects-wrapper {
-    padding: 40px 12px;
+    padding: 48px 12px;
     width: 96%;
   }
 
@@ -150,15 +163,13 @@ section.portfolio-projects-section {
   .portfolio-projects-section .portfolio-projects-grid {
     grid-template-columns: 1fr;
     gap: 20px;
-    /* Asegura que las cards no se salgan */
     max-width: 100%;
   }
 }
 
-/* Small mobile optimization */
 @media (max-width: 480px) {
   .portfolio-projects-section .portfolio-projects-wrapper {
-    padding: 32px 8px;
+    padding: 40px 8px;
     width: 98%;
   }
 
@@ -185,7 +196,6 @@ section.portfolio-projects-section {
   }
 }
 
-/* Extra small devices */
 @media (max-width: 360px) {
   .portfolio-projects-section .portfolio-projects-wrapper {
     padding: 28px 6px;
@@ -197,11 +207,16 @@ section.portfolio-projects-section {
   }
 }
 
-/* Dark mode support */
+/* Dark mode */
 .dark-mode .portfolio-projects-section .portfolio-projects-title {
   color: var(--color-text);
 }
 
 .dark-mode .portfolio-projects-section .portfolio-projects-subtitle {
   color: var(--color-text-secondary);
+}
+
+.dark-mode .portfolio-projects-badge {
+  background: rgba(99, 102, 241, 0.15);
+  border-color: rgba(99, 102, 241, 0.25);
 }

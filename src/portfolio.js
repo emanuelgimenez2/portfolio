@@ -3,84 +3,144 @@ import emoji from "react-easy-emoji";
 const greeting = {
   username: "Emanuel Gimenez",
   title: "Hola, soy Emanuel",
-  subTitle: emoji(
-    `Desarrollador Full Stack Web 🚀 con experiencia construyendo aplicaciones web con JavaScript, React, Node.js y otras tecnologías modernas.`
-  ),
+  subTitle:
+    "Full Stack Developer con +4 años de experiencia y fundador de Servitec. Especializado en el ecosistema JavaScript/TypeScript con React, Next.js, Node.js y bases de datos SQL/NoSQL. Experiencia liderando proyectos end-to-end, desde el relevamiento hasta produccion.",
+  roles: [
+    "Full Stack Developer",
+    "Fundador de Servitec",
+    "React & Node.js",
+    "TypeScript",
+  ],
   resumeLink:
-    "https://drive.google.com/file/d/1-minpFJYkK7-c1fYRbVxBCvqDgqb500v/view?usp=sharing",
+    "https://drive.google.com/file/d/1mXbHfZv9p9i1b4UFxYjJsWU1RmJPQ54L/view?usp=sharing",
 };
 
 const socialMediaLinks = {
   github: "https://github.com/emanuelgimenez2",
   linkedin: "https://www.linkedin.com/in/emanuel-gimenez/",
-  gmail: "e.gimenez.developer@gmail.com",
+  gmail: "emanuelgimenez2@gmail.com",
   whatsapp: "https://walink.co/664eed",
   instagram: "https://www.instagram.com/manurauns/",
 };
 
 const skillsSection = {
   title: "Skills",
-  subTitle: "FULL STACK DEVELOPER",
+  subTitle: "TECNOLOGIAS QUE USO PARA DAR VIDA A LOS PROYECTOS",
   skills: [],
+  skillCategories: [
+    {
+      title: "Frontend",
+      icon: "fas fa-laptop-code",
+      skills: [
+        "React",
+        "Next.js",
+        "Redux",
+        "TypeScript",
+        "JavaScript (ES6+)",
+        "HTML5",
+        "CSS3",
+        "Sass",
+        "Bootstrap",
+        "Material UI",
+        "Ant Design",
+      ],
+    },
+    {
+      title: "Backend",
+      icon: "fas fa-server",
+      skills: [
+        "Node.js",
+        "Express",
+        "Sequelize",
+        "REST APIs",
+        "SQL",
+      ],
+    },
+    {
+      title: "Bases de Datos",
+      icon: "fas fa-database",
+      skills: ["PostgreSQL", "MySQL", "MongoDB", "Firebase"],
+    },
+    {
+      title: "DevOps & Tools",
+      icon: "fas fa-tools",
+      skills: [
+        "Git",
+        "Docker",
+        "GitHub",
+        "Vercel",
+        "Jira",
+        "Claude AI",
+      ],
+    },
+    {
+      title: "Autenticacion",
+      icon: "fas fa-shield-alt",
+      skills: ["Auth0", "Firebase Auth"],
+    },
+    {
+      title: "Metodologias",
+      icon: "fas fa-project-diagram",
+      skills: ["Scrum", "Agile", "Gestion de proyectos"],
+    },
+  ],
   softwareSkills: [
-    {
-      skillName: "HTML5",
-      fontAwesomeClassname: "fab fa-html5",
-    },
-    {
-      skillName: "CSS3",
-      fontAwesomeClassname: "fab fa-css3-alt",
-    },
-    {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js",
-    },
-    {
-      skillName: "React",
-      fontAwesomeClassname: "fab fa-react",
-    },
-    {
-      skillName: "Node.js",
-      fontAwesomeClassname: "fab fa-node",
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm",
-    },
-    {
-      skillName: "SQL",
-      fontAwesomeClassname: "fas fa-database",
-    },
+    { skillName: "React", fontAwesomeClassname: "fab fa-react" },
+    { skillName: "Next.js", fontAwesomeClassname: "fab fa-react" },
+    { skillName: "JavaScript", fontAwesomeClassname: "fab fa-js" },
+    { skillName: "TypeScript", fontAwesomeClassname: "fab fa-js" },
+    { skillName: "Node.js", fontAwesomeClassname: "fab fa-node" },
+    { skillName: "HTML5", fontAwesomeClassname: "fab fa-html5" },
+    { skillName: "CSS3", fontAwesomeClassname: "fab fa-css3-alt" },
+    { skillName: "Sass", fontAwesomeClassname: "fab fa-sass" },
+    { skillName: "Git", fontAwesomeClassname: "fab fa-git-alt" },
+    { skillName: "Docker", fontAwesomeClassname: "fab fa-docker" },
+    { skillName: "npm", fontAwesomeClassname: "fab fa-npm" },
+    { skillName: "PostgreSQL", fontAwesomeClassname: "fas fa-database" },
+    { skillName: "MongoDB", fontAwesomeClassname: "fas fa-database" },
   ],
 };
 
 const projects = [
   {
     id: 1,
-    title: "Movies",
+    title: "Veterinaria - Salud Animal Domiciliaria",
     description:
-      "Aplicacion que permite buscar peliculas y series, y guardarlas en tus favoritos.",
-    image: require("../src/assets/images/movies-page.jpg"),
-    link: "https://api-movies-ten.vercel.app/",
-    repo: "https://github.com/emanuelgimenez2/api-movies",
+      "Plataforma integral para veterinaria con atencion domiciliaria. Incluye sistema de turnos, dashboard con metricas en tiempo real, gestion de mascotas, clientes y libreta sanitaria. Panel de administracion completo.",
+    image: "/veterinaria/inicio.png",
+    link: "https://veterinariaps.vercel.app/",
+    repo: "https://github.com/emanuelgimenez2",
+    tech: ["React", "Next.js", "Node.js", "PostgreSQL", "Auth0"],
   },
   {
     id: 2,
-    title: "Weather App",
+    title: "Helados Mio - Distribuidora",
     description:
-      "Aplicacion que permite consultar el clima de cualquier ciudad del mundo.",
-    image: require("../src/assets/images/clima.jpg"),
-    link: "https://app-weather-emanuelgimenez2.vercel.app/",
-    repo: "https://github.com/emanuelgimenez2/App-weather",
+      "Sistema de gestion para distribuidora de helados con catalogo de productos, carrito de compras, dashboard ejecutivo con metricas de ventas, gestion de clientes, stock, listas de precios y auditorias.",
+    image: "/heladiosmio/inicio.png",
+    link: "https://distri-helados-mio.vercel.app/",
+    repo: "https://github.com/emanuelgimenez2",
+    tech: ["React", "Next.js", "Node.js", "MongoDB", "Vercel"],
   },
   {
     id: 3,
-    title: "Turnos - Prefectura Naval",
+    title: "Turnos - Prefectura Naval Argentina",
     description:
-      "Aplicacion diseñada para agilizar y modernizar la gestion de turnos en la Prefectura Naval Argentina. Interfaz intuitiva que permite a ciudadanos y personal administrativo coordinar citas de manera eficiente.",
-    image: require("../src/assets/images/turno.jpeg"),
+      "Sistema de gestion de tramites nauticos para Prefectura Naval Argentina. Permite agendar turnos, consultar deudas de embarcaciones y gestionar tramites de forma digital y eficiente.",
+    image: "/turnosPNA/INICIO.png",
     link: "https://turno-polinave.vercel.app/",
     repo: "https://github.com/emanuelgimenez2/turno",
+    tech: ["React", "Node.js", "Express", "PostgreSQL"],
+  },
+  {
+    id: 4,
+    title: "Movies App",
+    description:
+      "Aplicacion que permite buscar peliculas y series consumiendo API externa, guardar favoritos y explorar tendencias. Interfaz moderna y responsive.",
+    image: require("../src/assets/images/movies-page.jpg"),
+    link: "https://api-movies-ten.vercel.app/",
+    repo: "https://github.com/emanuelgimenez2/api-movies",
+    tech: ["React", "Redux", "API REST", "CSS3"],
   },
 ];
 
@@ -88,54 +148,44 @@ const educationInfo = {
   viewEducation: true,
   schools: [
     {
+      schoolName: "soyHenry",
+      logo: require("./assets/images/soyHenry.png"),
+      subHeader: "Full Stack Developer",
+      duration: "2022 - Bootcamp intensivo (+800 horas)",
+      descBullets: [
+        "React | Redux | Node.js | Express | TypeScript",
+        "PostgreSQL | Sequelize | REST APIs | Testing",
+        "Metodologia Scrum | Code Reviews | Deploy continuo",
+      ],
+    },
+    {
       schoolName:
-        "Facultad de Ciencia y Tecnologia, Sede Concepcion del Uruguay",
+        "Universidad Autonoma de Entre Rios (UADER)",
       logo: require("./assets/images/logo_fcyt.png"),
-      subHeader: "Licenciatura en Sistemas de Informacion",
-      duration: "Abril 2008",
+      subHeader: "Lic. en Sistemas de Informacion",
+      duration: "2011",
     },
     {
       schoolName: "FreeCodeCamp.org",
       logo: require("./assets/images/logo_freecodecamp.jfif"),
-      subHeader: "Responsive Web Design",
-      duration: "Junio 2020 - Octubre 2020",
+      subHeader: "JavaScript Algorithms & Responsive Web Design",
+      duration: "2020",
       descBullets: [
-        "HTML5 | CSS3 | JavaScript",
-        "Data Structures | Algoritmos",
+        "JavaScript | Algoritmos | Data Structures",
+        "HTML5 | CSS3 | Responsive Design",
       ],
+    },
+    {
+      schoolName: "LinkedIn Learning",
+      logo: require("./assets/images/logo_freecodecamp.jfif"),
+      subHeader: "React Esencial",
+      duration: "2021",
     },
     {
       schoolName: "Google Activate",
       logo: require("./assets/images/google_activate.jpg"),
-      subHeader: "Curso de Introduccion al Desarrollo Web: HTML y CSS",
-      duration: "Octubre 2021",
-      descBullets: [
-        "Historia | Funcionamiento | Escritura",
-        "Publicacion | Estructura | Presentacion",
-        "Elementos | Layout",
-      ],
-    },
-    {
-      schoolName: "Platzi",
-      logo: require("./assets/images/platzy-logo.jpg"),
-      subHeader: "Escuela de Desarrollo Web",
-      duration: "Octubre 2021",
-      descBullets: [
-        "CodeStream | Git y Github | JavaScript | Data Structures",
-        "ECMAScript 6+ | APIs | ReactJS | NodeJS | MongoDB",
-      ],
-    },
-    {
-      schoolName: "soyHenry",
-      logo: require("./assets/images/soyHenry.png"),
-      subHeader: "Full Stack Developer",
-      duration: "En curso",
-      descBullets: [
-        "HTML5 | CSS3 | JavaScript | Git | Testing",
-        "AJAX | Webpack | ReactJS | Redux | React-Redux",
-        "NodeJS | Express | TypeScript",
-        "SQL | PostgreSQL | MySQL | Autenticacion",
-      ],
+      subHeader: "Introduccion al Desarrollo Web: HTML y CSS",
+      duration: "2021",
     },
   ],
 };
@@ -143,18 +193,9 @@ const educationInfo = {
 const techStack = {
   viewSkillBars: false,
   experience: [
-    {
-      Stack: "Frontend",
-      progressPercentage: "70%",
-    },
-    {
-      Stack: "Backend",
-      progressPercentage: "80%",
-    },
-    {
-      Stack: "Programacion",
-      progressPercentage: "60%",
-    },
+    { Stack: "Frontend", progressPercentage: "85%" },
+    { Stack: "Backend", progressPercentage: "80%" },
+    { Stack: "Bases de Datos", progressPercentage: "75%" },
   ],
 };
 
@@ -162,31 +203,38 @@ const workExperiences = {
   viewExperiences: true,
   experience: [
     {
-      role: "Personal permanente",
-      company: "Prefectura Naval Argentina",
-      companylogo: require("./assets/images/prefectura_logo.jpg"),
-      date: "2009 – Presente",
-      desc: "Personal responsable en despacho, administracion y soporte IT.",
+      role: "Fundador & Lead Developer",
+      company: "Servitec",
+      companylogo: require("./assets/images/helpdesk.png"),
+      date: "2022 – Presente",
+      desc: "Fundacion y gestion integral de empresa de desarrollo de software con cartera activa de clientes.",
       descBullets: [
-        "Equipo de personal",
-        "Gestion general",
-        "Soporte a servicios IT",
-        "Resolucion de errores",
-        "Soporte tecnico de emergencia",
+        "Desarrollo full stack con React, Next.js, Node.js, Express, PostgreSQL y MongoDB",
+        "Liderazgo tecnico end-to-end: requerimientos, arquitectura, desarrollo, testing y deploy",
+        "Integraciones con APIs de terceros, pasarelas de pago y autenticacion",
+        "Gestion de clientes, presupuestos y planificacion agil",
       ],
     },
     {
-      role: "Help Desk",
-      company: "Freelancer",
-      companylogo: require("./assets/images/helpdesk.png"),
-      date: "2010 – Presente",
-      desc: "Resolucion de problemas informaticos para particulares y empresas.",
+      role: "Ayudante de Tercera",
+      company: "Prefectura Naval Argentina",
+      companylogo: require("./assets/images/prefectura_logo.jpg"),
+      date: "2009 – Presente",
+      desc: "Gestion administrativa, documental electronica y coordinacion de tareas operativas.",
       descBullets: [
-        "MS Windows, MS Office",
-        "Redes",
-        "Impresoras",
-        "Problemas de hardware",
-        "Problemas de software",
+        "Gestion administrativa y documental electronica",
+        "Coordinacion de tareas operativas en entorno institucional",
+      ],
+    },
+    {
+      role: "Soporte IT",
+      company: "Freelance",
+      companylogo: require("./assets/images/helpdesk.png"),
+      date: "2015 – Presente",
+      desc: "Soporte tecnico y mantenimiento para empresas y particulares.",
+      descBullets: [
+        "Diagnostico y resolucion de problemas de hardware y software",
+        "Mantenimiento de equipos y redes",
       ],
     },
   ],
@@ -199,7 +247,7 @@ const openSource = {
 
 const bigProjects = {
   title: "Proyectos Grandes",
-  subtitle: "STARTUPS Y EMPRESAS EN LAS QUE COLABORE",
+  subtitle: "CLIENTES DE SERVITEC",
   projects: [],
 };
 
@@ -217,7 +265,7 @@ const talkSection = {
 const contactInfo = {
   title: emoji("Contactame ☎️"),
   subtitle:
-    "Queres hablar de un proyecto o simplemente saludar? Mi bandeja esta abierta para todos.",
+    "Tenes un proyecto en mente? Queres una cotizacion para tu idea? Escribime y hablamos.",
   number: "+5493442533465",
   email_address: "emanuelgimenez2@gmail.com",
 };
