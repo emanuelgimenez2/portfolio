@@ -148,7 +148,7 @@
 @media (max-width: 768px) {
   .portfolio-footer {
     margin-top: var(--space-3xl);
-    padding: var(--space-2xl) var(--space-lg) var(--space-lg);
+    padding: var(--space-2xl) var(--space-lg) var(--space-3xl);
   }
 
   .portfolio-footer-inner {
@@ -162,7 +162,7 @@
 
 @media (max-width: 480px) {
   .portfolio-footer {
-    padding: var(--space-xl) var(--space-md) var(--space-md);
+    padding: var(--space-xl) var(--space-md) var(--space-2xl);
   }
 
   .portfolio-footer-links {

@@ -13,11 +13,12 @@ import Top from "./topbutton/Top";
 import "./Main.css";
 
 export default function Main() {
-  const [isDark, setIsDark] = useState(false);
+  const [isDark, setIsDark] = useState(true);
 
   useEffect(() => {
-    const darkPref = window.matchMedia("(prefers-color-scheme: dark)");
-    setIsDark(darkPref.matches);
+    // Dark mode por defecto; si el usuario prefiere light, se cambia
+    const lightPref = window.matchMedia("(prefers-color-scheme: light)");
+    if (lightPref.matches) setIsDark(false);
   }, []);
 
   const changeTheme = useCallback(() => {
