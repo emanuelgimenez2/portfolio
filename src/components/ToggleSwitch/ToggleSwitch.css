@@ -1,96 +1,60 @@
+/* ============================================
+   Toggle Switch (Dark/Light mode)
+   ============================================ */
+
 .switch {
   position: relative;
-  display: inline-block;
-  width: 55px;
+  display: inline-flex;
+  align-items: center;
+  width: 48px;
   height: 26px;
+  cursor: pointer;
 }
 
-/* Fix visible slider checkbox */
-input{
-  transform: scale(0.5);
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  position: absolute;
 }
 
 .slider {
   position: absolute;
   cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  inset: 0;
+  background-color: var(--color-border-strong);
+  transition: background-color var(--transition-base);
 }
 
 .slider::before {
   position: absolute;
   content: "";
-  height: 26px;
-  width: 28px;
-  left: 0;
-  bottom: 0;
+  height: 20px;
+  width: 20px;
+  left: 3px;
+  bottom: 3px;
   background-color: white;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  transition: transform var(--transition-base);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 input:checked + .slider {
-  background-color: #2196f3;
+  background-color: var(--color-primary);
 }
 
-input:focus + .slider {
-  box-shadow: 0 0 1px #2196f3;
+input:focus-visible + .slider {
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.4);
 }
 
 input:checked + .slider::before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
+  transform: translateX(22px);
 }
 
-/* Rounded sliders */
+/* Rounded */
 .slider.round {
-  border-radius: 34px;
+  border-radius: var(--radius-full);
 }
 
 .slider.round::before {
   border-radius: 50%;
 }
-
-.slider::after {
-  display: inline;
-  position: absolute;
-  right: 9.3%;
-  bottom: 17.5%;
-}
-
-input:checked + .slider::after {
-  display: inline;
-  position: absolute;
-  right: 56.3%;
-  bottom: 14.5%;
-}
-
-@media all and (max-width: 786px) and (min-width: 425px) {
-  input:checked + .slider::after {
-    right: 60.3%;
-    bottom: 20.5%;
-  }
-  .slider::after {
-    right: 15.3%;
-    bottom: 22.5%;
-  }
-}
-
-@media all and (max-width: 2560px) and (min-width: 1552px) {
-  .slider::after {
-    bottom: 12.5% !important;
-  }
-}
-
-@media all and (max-width: 1552px) and (min-width: 1440px) {
-  .slider::after {
-    bottom: 7.5% !important;
-  }
-}
-
