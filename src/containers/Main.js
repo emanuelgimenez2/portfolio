@@ -15,12 +15,6 @@ import "./Main.css";
 export default function Main() {
   const [isDark, setIsDark] = useState(true);
 
-  useEffect(() => {
-    // Dark mode por defecto; si el usuario prefiere light, se cambia
-    const lightPref = window.matchMedia("(prefers-color-scheme: light)");
-    if (lightPref.matches) setIsDark(false);
-  }, []);
-
   const changeTheme = useCallback(() => {
     setIsDark((prev) => !prev);
   }, []);
